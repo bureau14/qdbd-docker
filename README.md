@@ -1,2 +1,0 @@
-# qdbd-docker
-qdbd-docker
