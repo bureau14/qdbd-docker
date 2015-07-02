@@ -9,12 +9,11 @@ ENV        QDB_DEB_VERSION 1
 # NO EDITING BELOW THIS LINE
 #############################
 
-RUN        apt-get install -y wget
+RUN        apt-get install -y wget && \
+           wget ${QDB_URL} && \
+           dpkg -i qdb-server_${QDB_VERSION}-${QDB_DEB_VERSION}.deb
 
-# Download install the deb package
-RUN        wget ${QDB_URL}
 ADD        qdbd-docker-wrapper.sh /usr/sbin/
-RUN        dpkg -i qdb-server_${QDB_VERSION}-${QDB_DEB_VERSION}.deb
 
 # Define mountable directory
 VOLUME     ["/var/lib/qdb/db"]
