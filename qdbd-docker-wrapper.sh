@@ -18,6 +18,4 @@ if [ -f ${POTENTIAL_LICENSE_FILE} ]; then
     LICENSE_FILE_PARAMETER="--license-file ${POTENTIAL_LICENSE_FILE}"
 fi
 
-echo "parameter = ${LICENSE_FILE_PARAMETER}"
-
 ${QDB_SERVER} ${LICENSE_FILE_PARAMETER} -a ${IP}:${PORT} $@
