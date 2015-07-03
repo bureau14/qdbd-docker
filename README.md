@@ -7,14 +7,13 @@ This repository contains the **Dockerfile** of [QuasarDB](http://www.quasardb.ne
 
 * [dockerfile/ubuntu](http://dockerfile.github.io/#/ubuntu)
 
-
 ### Installation
 
 1. Install [Docker](https://www.docker.com/).
 
 2. Download [automated build](https://registry.hub.docker.com/u/qdb/qdb/) from public [Docker Hub Registry](https://registry.hub.docker.com/): `docker pull qdb/qdb`
 
-   (alternatively, you can build an image from Dockerfile: `docker build -t="qdb" github.com/burea14/qdbd-docker`)
+   (alternatively, you can build an image from Dockerfile: `docker build -t="qdb" github.com/bureau14/qdbd-docker`)
 
 ### Usage
 
