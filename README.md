@@ -1,6 +1,6 @@
 ## QuasarDB Dockerfile
 
-This repository contains the **Dockerfile** of [QuasarDB](http://www.quasardb.net/) for [Docker](https://www.docker.com/)'s [automated build](https://registry.hub.docker.com/u/qdb/qdb/) published to the public [Docker Hub Registry](https://registry.hub.docker.com/).
+This repository contains the **Dockerfile** of [QuasarDB](http://www.quasardb.net/) for [Docker](https://www.docker.com/)'s [automated build](https://registry.hub.docker.com/u/bureau14/qdb/) published to the public [Docker Hub Registry](https://registry.hub.docker.com/).
 
 
 ### Base Docker Image
@@ -11,7 +11,7 @@ This repository contains the **Dockerfile** of [QuasarDB](http://www.quasardb.ne
 
 1. Install [Docker](https://www.docker.com/).
 
-2. Download [automated build](https://registry.hub.docker.com/u/qdb/qdb/) from public [Docker Hub Registry](https://registry.hub.docker.com/): `docker pull qdb/qdb`
+2. Download [automated build](https://registry.hub.docker.com/u/bureau14/qdb/) from public [Docker Hub Registry](https://registry.hub.docker.com/): `docker pull bureau14/qdb`
 
    (alternatively, you can build an image from Dockerfile: `docker build -t="qdb" github.com/bureau14/qdbd-docker`)
 
@@ -19,11 +19,11 @@ This repository contains the **Dockerfile** of [QuasarDB](http://www.quasardb.ne
 
 #### Run `qdbd`
 
-    docker run -d -p 2836:2836 --name qdb-server qdb/qdb
+    docker run -d -p 2836:2836 --name qdb-server bureau14/qdb
 
 #### Run `qdbd` w/ persistent directory
 
-    docker run -d -p 2836:2836 -v <db-dir>:/var/lib/qdb --name qdb-server qdb/qdb
+    docker run -d -p 2836:2836 -v <db-dir>:/var/lib/qdb --name qdb-server bureau14/qdb
 
 #### Run `qdbd` w/ license file and persistent directory
 
@@ -32,5 +32,5 @@ This repository contains the **Dockerfile** of [QuasarDB](http://www.quasardb.ne
 
     # Now launch the docker container with the <db-dir> mounted, the container will
     # pick up the license file automatically.
-    docker run -d -p 2836:2836 -v <db-dir>:/var/lib/qdb --name qdb-server qdb/qdb
+    docker run -d -p 2836:2836 -v <db-dir>:/var/lib/qdb --name qdb-server bureau14/qdb
 
