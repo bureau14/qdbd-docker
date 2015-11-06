@@ -3,7 +3,7 @@ FROM       ubuntu:latest
 # User configurable: define versions we are using
 ENV        QDB_VERSION     2.0.0
 ENV        QDB_DEB_VERSION 1
-ENV        QDB_URL         https://download.quasardb.net/quasardb/2.0/beta5/server/qdb-server_${QDB_VERSION}-${QDB_DEB_VERSION}.deb
+ENV        QDB_URL         https://download.quasardb.net/quasardb/2.0/beta6/server/qdb-server_${QDB_VERSION}-${QDB_DEB_VERSION}.deb
 
 #############################
 # NO EDITING BELOW THIS LINE
