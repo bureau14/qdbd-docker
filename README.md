@@ -7,7 +7,6 @@ This repository contains the **Dockerfile** of [QuasarDB](http://www.quasardb.ne
 |tag|description|
 |---|---|
 |`latest`|latest stable release|
-|`beta`|latest beta release|
 |`nightly`|bleeding edge|
 
 ### Base Docker Image
