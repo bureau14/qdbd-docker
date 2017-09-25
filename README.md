@@ -27,6 +27,10 @@ This repository contains the **Dockerfile** of [QuasarDB](http://www.quasardb.ne
 
     docker run -d -p 2836:2836 --name qdb-server bureau14/qdb
 
+#### Run `qdbd` without [cluster keys](http://doc.quasardb.net/2.1.0/reference/qdb_cluster_keygen.html)
+
+    docker run -d -p 2836:2836 --name qdb-server bureau14/qdb --security=0
+
 #### Run `qdbd` w/ persistent directory
 
     docker run -d -p 2836:2836 -v <db-dir>:/var/lib/qdb --name qdb-server bureau14/qdb
