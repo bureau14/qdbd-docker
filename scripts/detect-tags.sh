@@ -3,7 +3,7 @@ set -euo pipefail
 IFS=$'\n\t'
 
 # Either explicitly provide the file, or detect it from working dir
-FILE=$1
+FILE=${1:-}
 
 if [[ -z "${FILE}" ]]
 then
