@@ -1,4 +1,12 @@
 #!/usr/bin/env bash
+set -euo pipefail
+IFS=$'\n\t'
+
+if [ -z "$1" ]
+then
+    echo "Usage: build-and-push.sh [tag & tags..]"
+    exit 1
+fi
 
 SCRIPTDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 IMAGE="bureau14/qdb"
