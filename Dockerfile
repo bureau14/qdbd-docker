@@ -1,4 +1,4 @@
-FROM       ubuntu:latest
+FROM       ubuntu:xenial
 
 # Fixing debconf warning about TREM
 ENV        DEBIAN_FRONTEND teletype
@@ -25,4 +25,3 @@ ENTRYPOINT ["/usr/bin/qdbd-docker-wrapper.sh"]
 
 # Expose the port qdbd is listening at
 EXPOSE     2836
-
