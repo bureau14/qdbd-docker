@@ -15,6 +15,7 @@ then
     then
         echo "Can only detect tags from one file, found: "
         echo ${FILES[@]}
+        exit 1
     fi
 
     FILE=${FILES[0]}
